@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "pwd2txt",
+  "version": "1.0",
+
+  "description": "A simple extension to toggle a passwd input box to a textbox",
+
+  "applications": {
+    "gecko": {
+      "id": "members@techministry.gr",
+      "strict_min_version": "45.0"
+    }
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["pwd2txt.js"]
+    }
+  ],
+  
+  "background": {
+    "scripts" : [ "pwd2txt.js" ]
+  }
+  
+  
+}
